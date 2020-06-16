@@ -79,7 +79,7 @@ urls.append("https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Chin
 urls.append("https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaIp.list")
 
 
-get_rules_and_save(urls, "direct.conf")
+get_rules_and_save(urls, "direct.list")
 
 urls = []
 urls.append("https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list")
@@ -91,7 +91,14 @@ urls.append("https://raw.githubusercontent.com/NobyDa/ND-AD/master/QuantumultX/A
 urls.append("https://raw.githubusercontent.com/eHpo1/Rules/master/QuantumultX/Filter/Liby.txt")
 urls.append("https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/AdRule.list")
 
-get_rules_and_save(urls, "block.conf")
+get_rules_and_save(urls, "block.list")
+
+urls = ["https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyLite.list"]
+get_rules_and_save(urls, "proxy.list")
+
+urls = ["https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list"]
+get_rules_and_save(urls, "proxy_media.list")
+
 
 os.system("git add .")
 os.system("git commit -m 'auto commit'")
