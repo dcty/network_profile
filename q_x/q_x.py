@@ -91,13 +91,13 @@ urls.append("https://raw.githubusercontent.com/NobyDa/ND-AD/master/QuantumultX/A
 urls.append("https://raw.githubusercontent.com/eHpo1/Rules/master/QuantumultX/Filter/Liby.txt")
 urls.append("https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/AdRule.list")
 
-get_rules_and_save(urls, "block.list")
+# get_rules_and_save(urls, "block.list")
 
 urls = ["https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyLite.list"]
 get_rules_and_save(urls, "proxy.list")
 
 urls = ["https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list"]
-get_rules_and_save(urls, "proxy_media.list")
+# get_rules_and_save(urls, "proxy_media.list")
 
 
 os.system("git add .")
